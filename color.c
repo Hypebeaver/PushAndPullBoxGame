@@ -1,6 +1,5 @@
 /*
- * NAME     : LOOIKIANJOHN
- * ID       : 19741767
+
  * PURPOSE  : Implement of goal color
  * DATE     : 14/4/23
  * DATE MOD : 15/4/23
