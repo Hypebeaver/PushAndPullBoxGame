@@ -6,7 +6,6 @@ EXEC = box
 ifdef PULL
 CFLAGS += -D PULL
 PULL : clean $(EXEC)
-OBJ += pull.o
 endif
 
 $(EXEC) : $(OBJ)
@@ -24,16 +23,13 @@ map.o : map.c map.h color.h
 move.o : move.c move.h
 	$(CC) $(CFLAGS) -c move.c
 
-pull.o : pull.c pull.h
-	$(CC) $(CFLAGS) -c pull.c
-
 randomBox.o : randomBox.c randomBox.h macro.h
 	$(CC) $(CFLAGS) -c randomBox.c
 
 terminal.o : terminal.c terminal.h
 	$(CC) $(CFLAGS) -c terminal.c
 
-box.o : box.c check.h map.h randomBox.h terminal.h move.h pull.h macro.h
+box.o : box.c check.h map.h randomBox.h terminal.h move.h macro.h
 	$(CC) $(CFLAGS) -c box.c
 
 clean :
