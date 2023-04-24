@@ -1,6 +1,4 @@
 /*
- * NAME     : LOOIKIANJOHN
- * ID       : 19741767
  * PURPOSE  : Implement of random generate box location inside the map
  * DATE     : 14/4/23
  * DATE MOD : 17/4/23
@@ -11,11 +9,16 @@
 #include "macro.h"
 #include "randomBox.h"
 
+/*call this function just ONCE at the beginning of your program before using the random number generator */
 void initRandom()
 {
     srand(time(NULL));
 }
 
+/* Will return random integer between *low* and *high* inclusive.
+   If the low is larger than the high, it will return -1 instead.
+   In theory, it still works with negative *low* and *high* (as long as low is not larger than high), but for this assignment you will most likely not need the negative number.
+   Please ensure you call initRandom function once before starting using this function. */
 int randomGenerator(int low, int high)
 {
     int number = -1;
