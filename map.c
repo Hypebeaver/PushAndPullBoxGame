@@ -1,6 +1,4 @@
 /*
- * NAME     : LOOIKIANJOHN
- * ID       : 19741767
  * PURPOSE  : Imlement of generate and print the map
  * DATE     : 5/4/23
  * DATE MOD : 17/4/23
